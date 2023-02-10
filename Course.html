@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="MyCss.css" rel="stylesheet" />
+    <style>
+        .container > .main {
+            background-image: url("https://miro.medium.com/max/1400/0*MLRY_dFePD0a1I-L");
+        }
+
+        .button1 {
+            color: white;
+            background-color: darkolivegreen;
+            font-size: 20px;
+            position: absolute;
+            left: 100px;
+        }
+
+        .button1:hover{
+            cursor:initial;
+        }
+
+        .btn-heading {
+            color: white;
+            background-color: maroon;
+            font-size: 20px;
+            position: absolute;
+            left: 600px
+        }
+
+        .btn-heading:hover{
+            cursor:initial;
+        }
+
+
+        .form-text {
+            font-size: 18px;
+        }
+
+        form {
+            position: absolute;
+            left: 100px;
+            z-index: 0;
+        }
+
+        h2 {
+            position: absolute;
+            left: 50px;
+            top: 70px;
+        }
+
+        .main > a {
+            position: absolute;
+            top: 490px;
+            right: 100px;
+            background-color: maroon;
+            font-size: 27px;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        table {
+            left: 400px;
+            position: absolute;
+            font-size: 15px;
+            background-color: darkolivegreen;
+            color: white;
+            margin: 0 auto;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            text-align: center;
+        }
+
+        thead > tr {
+            background-color: maroon;
+        }
+
+        tbody > tr:hover {
+            background-color: darkslategray;
+        }
+
+        .first {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="myCourse">
+
+        <div class="header" style="height:120px; z-index:1; position:sticky; top:0px;">
+            <h3 style="color:white; text-align:center; font-family:Consolas; ">Coding School Webpage</h3>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="Trainer.html">Trainers</a></li>
+                <li><a href="Student.html">Students</a></li>
+                <li><a href="Assignment.html">Assignments</a></li>
+                <li><a href="TrainerPerCourse.html">Trainers per Course</a></li>
+                <li><a href="StudentPerCourse.html">Students per Course</a></li>
+                <li><a href="AssignmentPerCourse.html">Assignments per Course</a></li>
+                <li><a href="AssignmentPerStudentPerCourse.html">Assignments per Student per Course</a></li>
+            </ul>
+            <h2 style="color:white; text-align:left; font-family:Consolas; ">Courses</h2>
+        </div>
+
+        <div class="main" style="position:absolute; ">
+            <div class="form-text">
+                <br />
+                <br />
+                <button class="button1">Add a Course</button>
+                <button class="btn-heading">COURSES</button>
+                <br />
+                <br />
+                <form>
+                    <label for="title">Title:*</label><br />
+                    <select name="title" id="title" required>
+                        <option selected value=""></option>
+                        <option value="csharp">C#</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                    </select>
+                    <br />
+                    <label for="stream">Stream:*</label><br />
+                    <select name="stream" id="stream" required>
+                        <option selected value=""></option>
+                        <option value="7">Cb7</option>
+                        <option value="8">Cb8</option>
+                        <option value="9">Cb9</option>
+                        <option value="10">Cb10</option>
+                        <option value="11">Cb11</option>
+                        <option value="12">Cb12</option>
+                        <option value="13">Cb13</option>
+                        <option value="14">Cb14</option>
+                        <option value="15">Cb15</option>
+                    </select>
+                    <br />
+                    <label for="type">Type:*</label><br />
+                    <select name="type" id="type" required>
+                        <option selected value=""></option>
+                        <option value="fulltime">Full time</option>
+                        <option value="parttime">Part time</option>
+                    </select>
+                    <br />
+                    <strong>Start Date:*</strong><br />
+                    <input type="date" name="startDate" value="" min="2017-01-02" required/>
+                    <br />
+                    <strong>End Date:*</strong><br />
+                    <input type="date" name="endDate" value="" max="2024-12-31" required/>
+
+                    <br />
+                    <br />
+                    <input type="submit" value="Submit" />
+
+                </form>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TITLE</th>
+                            <th>STREAM</th>
+                            <th>TYPE</th>
+                            <th>START DATE</th>
+                            <th>END DATE</th>
+                            <th style="background-color:maroon;"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>c#</td>
+                            <td>cb9</td>
+                            <td>Part time</td>
+                            <td>2018-1-22</td>
+                            <td>2018-6-22</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>java</td>
+                            <td>cb12</td>
+                            <td>Part time</td>
+                            <td>2019-9-12</td>
+                            <td>2020-2-12</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>c#</td>
+                            <td>cb9</td>
+                            <td>Full time</td>
+                            <td>2018-5-22</td>
+                            <td>2018-11-22</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>python</td>
+                            <td>cb13</td>
+                            <td>Part time</td>
+                            <td>2020-1-20</td>
+                            <td>2020-6-20</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>java</td>
+                            <td>cb12</td>
+                            <td>Full time</td>
+                            <td>2019-1-20</td>
+                            <td>2019-6-20</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <a href="Enter.html">Exit</a>
+        </div>
+
+        <div class="footer" style=" font-size:14px; color:white; background-color: maroon; width: 1250px; text-align: right; position:absolute; top:785px;">
+            <span>@2023 Coding School</span>
+        </div>
+
+    </div>
+</body>
+</html>

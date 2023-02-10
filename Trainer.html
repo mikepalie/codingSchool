@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="MyCss.css" rel="stylesheet" />
+    <style>
+
+        
+
+        .container > .main {
+            background-image: url("https://miro.medium.com/max/1400/0*OOVmXlDxoD0bizUw");
+        }
+
+        .button1 {
+            color: white;
+            background-color: darkolivegreen;
+            font-size: 20px;
+            position: absolute;
+            left: 100px;
+        }
+
+        .button1:hover {
+            cursor: initial;
+        }
+
+        .btn-heading:hover {
+            cursor: initial;
+        }
+
+        .btn-heading {
+            color: white;
+            background-color: maroon;
+            font-size: 20px;
+            position: absolute;
+            left: 600px
+        }
+
+        .form-text {
+            font-size: 18px;
+        }
+
+        form {
+            position: absolute;
+            left: 100px;
+            z-index: 0;
+        }
+
+        h2 {
+            position: absolute;
+            left: 50px;
+            top: 70px;
+        }
+
+        .main > a {
+            position: absolute;
+            top: 490px;
+            right: 100px;
+            background-color: maroon;
+            font-size: 27px;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        table {
+            left: 400px;
+            position: absolute;
+            font-size: 15px;
+            background-color: darkolivegreen;
+            color: white;
+            margin: 0 auto;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            text-align: center;
+        }
+
+        thead > tr {
+            background-color: maroon;
+        }
+
+        tbody > tr:hover {
+            background-color: darkslategray;
+        }
+
+        .first {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header" style="height:120px; z-index:3; position:sticky; top:0px;">
+            <h3 style="color:white; text-align:center; font-family:Consolas; ">Coding School Webpage</h3>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="Trainer.html">Trainers</a></li>
+                <li><a href="Student.html">Students</a></li>
+                <li><a href="Assignment.html">Assignments</a></li>
+                <li><a href="TrainerPerCourse.html">Trainers per Course</a></li>
+                <li><a href="StudentPerCourse.html">Students per Course</a></li>
+                <li><a href="AssignmentPerCourse.html">Assignments per Course</a></li>
+                <li><a href="AssignmentPerStudentPerCourse.html">Assignments per Student per Course</a></li>
+            </ul>
+            <h2 style="color:white; text-align:left; font-family:Consolas; ">Trainers</h2>
+            
+
+        </div>
+        <div class="main" style="position:absolute; ">
+            <div class="form-text">
+                <br />
+                <br />
+                <button class="button1">Add a Trainer</button>
+                <button class="btn-heading">TRAINERS</button>
+                <br />
+                <br />
+                <form>
+                    <label for="firstName">Firstname:*</label><br />
+                    <input type="text" name="firstName" value=""required/><br />
+                    <label for="lastName">Lastname:*</label><br />
+                    <input type="text" name="lastName" value="" required /><br />
+                    <label for="subject">Subject:*</label><br />
+                    <select name="subject" id="subject" required>
+                        <option selected value=""></option>
+                        <option value="csharp">C#</option>
+                        <option value="java">Java</option>
+                        <option value="python">Python</option>
+                    </select>
+                    <br />
+                    <br />
+                    <input type="submit" value="Submit" />
+
+                </form>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>FIRSTNAME</th>
+                            <th>LASTNAME</th>
+                            <th>SUBJECT</th>
+                            <th style="background-color:maroon;"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Georgios</td>
+                            <td>Papadopoulos</td>
+                            <td>c#</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nikolaos</td>
+                            <td>Giannopoulos</td>
+                            <td>python</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Konstantinos</td>
+                            <td>Ketsentzoglou</td>
+                            <td>java</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dimitrios</td>
+                            <td>Dedes</td>
+                            <td>java</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ioanna</td>
+                            <td>Georgaki</td>
+                            <td>c#</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mixalis</td>
+                            <td>Giannakopoulos</td>
+                            <td>python</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nikoleta</td>
+                            <td>Krokida</td>
+                            <td>c#</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a style="position: absolute; top: 490px; right: 100px; background-color: maroon;font-size: 27px; padding-left: 6px; padding-right: 6px;" href="Enter.html">Exit</a>
+        <div/>
+        <div class="footer" style=" font-size:14px; color:white; background-color: maroon; width: 1250px; text-align: right; position:absolute; top:680px;">
+            <span>@2023 Coding School</span>
+        </div>
+    </div>
+</body>
+</html>

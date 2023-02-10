@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="MyCss.css" rel="stylesheet" />
+    <style>
+
+
+
+        .container > .main {
+            background-image: url("https://miro.medium.com/max/1400/1*UDltRnBCkYifKh4VuZ7lFw.jpeg");
+        }
+
+        .button1 {
+            color: white;
+            background-color:darkolivegreen;
+            font-size: 20px;
+            position: absolute;
+            left: 100px;
+        }
+
+        .button1:hover {
+            cursor: initial;
+        }
+
+        .btn-heading:hover {
+            cursor: initial;
+        }
+
+        .btn-heading {
+            color: white;
+            background-color: maroon;
+            font-size: 20px;
+            position: absolute;
+            left: 600px
+        }
+
+        .form-text {
+            font-size: 18px;
+        }
+
+        form {
+            position: absolute;
+            left: 100px;
+            z-index: 0;
+        }
+
+        h2 {
+            position: absolute;
+            left: 50px;
+            top: 70px;
+        }
+
+        .main > a {
+            position: absolute;
+            top: 490px;
+            right: 100px;
+            background-color: maroon;
+            font-size: 27px;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        table {
+            left: 380px;
+            right:100px;
+            position: absolute;
+            font-size: 15px;
+            background-color: darkolivegreen;
+            color: white;
+            margin: 0 auto;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            text-align: center;
+        }
+
+        thead > tr {
+            background-color: maroon;
+        }
+
+        tbody > tr:hover {
+            background-color: darkslategray;
+        }
+
+        .first {
+            text-align: center;
+        }
+
+       
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" style=" height:120px; z-index:3; position:sticky; top:0px; " >
+            <h3 style="color:white; text-align:center; font-family:Consolas; ">Coding School Webpage</h3>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="Trainer.html">Trainers</a></li>
+                <li><a href="Student.html">Students</a></li>
+                <li><a href="Assignment.html">Assignments</a></li>
+                <li><a href="TrainerPerCourse.html">Trainers per Course</a></li>
+                <li><a href="StudentPerCourse.html">Students per Course</a></li>
+                <li><a href="AssignmentPerCourse.html">Assignments per Course</a></li>
+                <li><a href="AssignmentPerStudentPerCourse.html">Assignments per Student per Course</a></li>
+            </ul>
+            <h2 style="color:white; text-align:left; font-family:Consolas; ">Assingnments</h2>
+
+
+        </div>
+        <div class="main" style="position:absolute; ">
+            <div class="form-text">
+                <br />
+                <br />
+                <button class="button1">Add an Assingnment</button>
+                <button class="btn-heading">Assignments</button>
+                <br />
+                <br />
+                <form>
+                    <label for="title">Title:*</label><br />
+                    <input type="text" name="title" value="" required /><br />
+                    <label for="description">Description:*</label><br />
+                    <textarea maxlength="80" cols="22" rows="6" required placeholder="*Give your description (80 characters)" name="description"></textarea><br />
+                    <label for="subDateTime">SubDateTime:*</label><br />
+                    <input type="datetime" name="subDateTime" value="" required /><br />
+                    <label for="oralMark">Oral Mark:*</label><br />
+                    <input type="number" name="oralMark" value="" min="0" max="100" step="1" /><br />
+                    <label for="totalMark">Total Mark:*</label><br />
+                    <input type="number" name="totalMark" value="" min="0" max="100" step="1" />
+                    <br />
+                    <br />
+                    <input type="submit" value="Submit" />
+
+                </form>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>TITLE</th>
+                            <th>DESCRIPTION</th>
+                            <th>SUBDATETIME</th>
+                            <th>ORAL MARK</th>
+                            <th>TOTAL MARK</th>
+                            <th style="background-color:maroon;"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Lotto</td>
+                            <td>A stimulation of the lucky game Lotto</td>
+                            <td>2023-12-2 15:33</td>
+                            <td>87</td>
+                            <td>90</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Donuts</td>
+                            <td>The webpage of a donuts shop</td>
+                            <td>2023-3-1 20:01</td>
+                            <td>75</td>
+                            <td>88</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cinema</td>
+                            <td>A platform where customers can be informed about cinema movies </td>
+                            <td>2023-20-3 10:47</td>
+                            <td>80</td>
+                            <td>85</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a style="position: absolute; top: 600px; right: 100px; background-color: maroon;font-size: 27px; padding-left: 6px; padding-right: 6px;" href="Enter.html">Exit</a>
+            <div />
+            <div class="footer" style=" font-size:14px; color:white; background-color: maroon; width: 1250px; text-align: right; position:absolute; top:680px;">
+                <span>@2023 Coding School</span>
+            </div>
+        </div>
+</body>
+</html>

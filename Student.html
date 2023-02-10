@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="MyCss.css" rel="stylesheet" />
+    <style>
+
+
+
+        .container > .main {
+            background-image: url("https://media.tychr.com/wp-content/uploads/2022/03/best-online-IB-Psychology-HL-Tutors.jpg");
+        }
+
+        .button1 {
+            color: white;
+            background-color: darkolivegreen;
+            font-size: 20px;
+            position: absolute;
+            left: 100px;
+        }
+
+        .button1:hover {
+            cursor: initial;
+        }
+
+        .btn-heading:hover {
+            cursor: initial;
+        }
+
+        .btn-heading {
+            color: white;
+            background-color: maroon;
+            font-size: 20px;
+            position: absolute;
+            left: 600px
+        }
+
+        .form-text {
+            font-size: 18px;
+        }
+
+        form {
+            position: absolute;
+            left: 100px;
+            z-index: 0;
+        }
+
+        h2 {
+            position: absolute;
+            left: 50px;
+            top: 70px;
+        }
+
+        .main > a {
+            position: absolute;
+            top: 490px;
+            right: 100px;
+            background-color: maroon;
+            font-size: 27px;
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        table {
+            left: 400px;
+            position: absolute;
+            font-size: 15px;
+            background-color: darkolivegreen;
+            color: white;
+            margin: 0 auto;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            border-width: 2px;
+            border-color: black;
+            border-style: solid;
+            text-align: center;
+        }
+
+        thead > tr {
+            background-color: maroon;
+        }
+
+        tbody > tr:hover {
+            background-color: darkslategray;
+        }
+
+        .first {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header" style="height:120px; z-index:1;">
+            <h3 style="color:white; text-align:center; font-family:Consolas; ">Coding School Webpage</h3>
+            <ul>
+                <li><a href="Homepage.html">Home</a></li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="Trainer.html">Trainers</a></li>
+                <li><a href="Student.html">Students</a></li>
+                <li><a href="Assignment.html">Assignments</a></li>
+                <li><a href="TrainerPerCourse.html">Trainers per Course</a></li>
+                <li><a href="StudentPerCourse.html">Students per Course</a></li>
+                <li><a href="AssignmentPerCourse.html">Assignments per Course</a></li>
+                <li><a href="AssignmentPerStudentPerCourse.html">Assignments per Student per Course</a></li>
+            </ul>
+            <h2 style="color:white; text-align:left; font-family:Consolas; ">Students</h2>
+            
+
+        </div>
+        <div class="main" style="position:absolute; ">
+            <div class="form-text">
+                <br />
+                <br />
+                <button class="button1">Add a Student</button>
+                <button class="btn-heading">STUDENTS</button>
+                <br />
+                <br />
+                <form>
+                    <label for="firstName">Firstname:*</label><br />
+                    <input type="text" name="firstName" value="" required /><br />
+                    <label for="lastName">Lastname:*</label><br />
+                    <input type="text" name="lastName" value="" required /><br />
+                    <strong>Birthdate:*</strong><br />
+                    <input type="date" name="birthdate" value="" min="1960-1-1" required /><br />
+                    <label for="tuition">Tuition Fees(Euros):*</label><br />
+                    <input type="number" name="tuition" value=""  min="0.00" max="10000.00" step="500" required />
+                    <br />
+                    <br />
+                    <input type="submit" value="Submit" />
+
+                </form>
+            </div>
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>FIRSTNAME</th>
+                            <th>LASTNAME</th>
+                            <th>DATE OF BIRTH</th>
+                            <th>TUITION FEES</th>
+                            <th style="background-color:maroon;"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Iosif</td>
+                            <td>Papadakis</td>
+                            <td>1985-2-23</td>
+                            <td>1500 Euros</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Anastasios</td>
+                            <td>Nikologiannis</td>
+                            <td>1990-2-30</td>
+                            <td>1500 Euros</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dimitra</td>
+                            <td>Kontomina</td>
+                            <td>1991-4-20</td>
+                            <td>2000 Euros</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gerasimos</td>
+                            <td>Niniadis</td>
+                            <td>1978-11-15</td>
+                            <td>2500 Euros</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Anna</td>
+                            <td>Mpakodimou</td>
+                            <td>1995-2-10</td>
+                            <td>1500 Euros</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Themistoklis</td>
+                            <td>Kalantzis</td>
+                            <td>1989-7-3</td>
+                            <td>2000 Euros</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Eleni</td>
+                            <td>Karali</td>
+                            <td>1990-6-22</td>
+                            <td>1500 Euros</td>
+                            <td>
+                                <a href="#" style="background-color:maroon;">Edit</a>
+                                /<a href="#" style="background-color:maroon;">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <a style="position: absolute; top: 490px; right: 100px; background-color: maroon;font-size: 27px; padding-left: 6px; padding-right: 6px;" href="Enter.html">Exit</a>
+        <div/>
+        <div class="footer" style=" font-size:14px; color:white; background-color: maroon; width: 1250px; text-align: right; position:absolute; top:680px;">
+            <span>@2023 Coding School</span>
+        </div>
+    </div>
+</body>
+</html>
